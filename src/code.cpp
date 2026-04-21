@@ -58,7 +58,7 @@ String to_lower_v3(String x) {
 
 //' Simuler en AR(1)-prosess
 //'
-//' Hvert steg: x[t] = phi * x[t-1] + støy
+//' Hvert steg: x_t = phi * x_{t-1} + støy.
 //' Fordi hvert steg avhenger av forrige kan ikke R vektorisere dette.
 //'
 //' @param n   Antall tidssteg
