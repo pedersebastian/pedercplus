@@ -15,3 +15,6 @@ Strengen med små bokstaver
 \description{
 Versjon 3: range-based for-loop med referanse
 }
+\examples{
+to_lower_v3("Hello World")
+}

@@ -2,8 +2,7 @@
 % Please edit documentation in R/RcppExports.R
 \name{to_lower_v2}
 \alias{to_lower_v2}
-\title{Versjon 2: manuell loop med ASCII-aritmetikk
-Store bokstaver A-Z har ASCII 65-90, små a-z har 97-122 (avstand 32)}
+\title{Versjon 2: manuell loop med ASCII-aritmetikk}
 \usage{
 to_lower_v2(x)
 }
@@ -14,6 +13,8 @@ to_lower_v2(x)
 Strengen med små bokstaver
 }
 \description{
-Versjon 2: manuell loop med ASCII-aritmetikk
-Store bokstaver A-Z har ASCII 65-90, små a-z har 97-122 (avstand 32)
+Store bokstaver A-Z har ASCII 65-90, små a-z har 97-122 (avstand 32).
+}
+\examples{
+to_lower_v2("Hello World")
 }

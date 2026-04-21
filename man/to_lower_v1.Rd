@@ -15,3 +15,6 @@ Strengen med små bokstaver
 \description{
 Versjon 1: std::transform med ::tolower
 }
+\examples{
+to_lower_v1("Hello World")
+}

@@ -4,9 +4,9 @@
 \name{pedercplus-package}
 \alias{pedercplus}
 \alias{pedercplus-package}
-\title{pedercplus: What the Package Does (One Line, Title Case)}
+\title{pedercplus: Learning C++ and Rcpp Through Examples}
 \description{
-What the package does (one paragraph).
+A personal learning package exploring C++ and Rcpp. Contains implementations of string manipulation and time series simulation, used to compare different C++ approaches and understand when C++ offers performance benefits over plain R.
 }
 \seealso{
 Useful links:
@@ -18,7 +18,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: First Last \email{first.last@example.com}
+\strong{Maintainer}: Peder Martinsen \email{peder.s.martinsen@gmail.com}
 
 }
 \keyword{internal}

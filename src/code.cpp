@@ -2,23 +2,12 @@
 #include <algorithm>
 using namespace Rcpp;
 
-//' Summer alle elementer i en numerisk vektor
-//'
-//' @param x En numerisk vektor
-//' @return Summen av alle elementer
-//' @export
-// [[Rcpp::export]]
-double sum_cpp(NumericVector x) {
-    double total = 0;
-    for (int i = 0; i < x.size(); i++) {
-        total += x[i];
-    }
-    return total;
-}
-
 //' Versjon 1: std::transform med ::tolower
+//'
 //' @param x En tekststreng
 //' @return Strengen med små bokstaver
+//' @examples
+//' to_lower_v1("Hello World")
 //' @export
 // [[Rcpp::export]]
 String to_lower_v1(String x) {
@@ -28,9 +17,13 @@ String to_lower_v1(String x) {
 }
 
 //' Versjon 2: manuell loop med ASCII-aritmetikk
-//' Store bokstaver A-Z har ASCII 65-90, små a-z har 97-122 (avstand 32)
+//'
+//' Store bokstaver A-Z har ASCII 65-90, små a-z har 97-122 (avstand 32).
+//'
 //' @param x En tekststreng
 //' @return Strengen med små bokstaver
+//' @examples
+//' to_lower_v2("Hello World")
 //' @export
 // [[Rcpp::export]]
 String to_lower_v2(String x) {
@@ -44,8 +37,11 @@ String to_lower_v2(String x) {
 }
 
 //' Versjon 3: range-based for-loop med referanse
+//'
 //' @param x En tekststreng
 //' @return Strengen med små bokstaver
+//' @examples
+//' to_lower_v3("Hello World")
 //' @export
 // [[Rcpp::export]]
 String to_lower_v3(String x) {
@@ -65,6 +61,10 @@ String to_lower_v3(String x) {
 //' @param phi Autokorrelasjon (-1 til 1). 0.9 = treg mean-reversion
 //' @param sigma Standardavvik på støyen
 //' @return Numerisk vektor av lengde n
+//' @examples
+//' set.seed(1)
+//' x <- ar1_cpp(100, phi = 0.9, sigma = 1)
+//' plot(x, type = "l")
 //' @export
 // [[Rcpp::export]]
 NumericVector ar1_cpp(int n, double phi, double sigma) {

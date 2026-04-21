@@ -20,3 +20,8 @@ Numerisk vektor av lengde n
 Hvert steg: x(t) = phi * x(t-1) + støy.
 Fordi hvert steg avhenger av forrige kan ikke R vektorisere dette.
 }
+\examples{
+set.seed(1)
+x <- ar1_cpp(100, phi = 0.9, sigma = 1)
+plot(x, type = "l")
+}

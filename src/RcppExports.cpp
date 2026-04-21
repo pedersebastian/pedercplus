@@ -10,17 +10,6 @@ Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
 Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
-// sum_cpp
-double sum_cpp(NumericVector x);
-RcppExport SEXP _pedercplus_sum_cpp(SEXP xSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
-    rcpp_result_gen = Rcpp::wrap(sum_cpp(x));
-    return rcpp_result_gen;
-END_RCPP
-}
 // to_lower_v1
 String to_lower_v1(String x);
 RcppExport SEXP _pedercplus_to_lower_v1(SEXP xSEXP) {
@@ -69,7 +58,6 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_pedercplus_sum_cpp", (DL_FUNC) &_pedercplus_sum_cpp, 1},
     {"_pedercplus_to_lower_v1", (DL_FUNC) &_pedercplus_to_lower_v1, 1},
     {"_pedercplus_to_lower_v2", (DL_FUNC) &_pedercplus_to_lower_v2, 1},
     {"_pedercplus_to_lower_v3", (DL_FUNC) &_pedercplus_to_lower_v3, 1},
