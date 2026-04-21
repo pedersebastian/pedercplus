@@ -1,6 +1,9 @@
-# pedercplus: What the Package Does (One Line, Title Case)
+# pedercplus: Learning C++ and Rcpp Through Examples
 
-What the package does (one paragraph).
+A personal learning package exploring C++ and Rcpp. Contains
+implementations of string manipulation and time series simulation, used
+to compare different C++ approaches and understand when C++ offers
+performance benefits over plain R.
 
 ## See also
 
@@ -14,4 +17,4 @@ Useful links:
 
 ## Author
 
-**Maintainer**: First Last <first.last@example.com>
+**Maintainer**: Peder Martinsen <peder.s.martinsen@gmail.com>

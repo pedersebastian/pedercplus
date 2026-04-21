@@ -26,3 +26,11 @@ ar1_cpp(n, phi, sigma)
 ## Value
 
 Numerisk vektor av lengde n
+
+## Examples
+
+``` r
+set.seed(1)
+x <- ar1_cpp(100, phi = 0.9, sigma = 1)
+plot(x, type = "l")
+```

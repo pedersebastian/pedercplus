@@ -1,7 +1,6 @@
-# Versjon 2: manuell loop med ASCII-aritmetikk Store bokstaver A-Z har ASCII 65-90, små a-z har 97-122 (avstand 32)
+# Versjon 2: manuell loop med ASCII-aritmetikk
 
-Versjon 2: manuell loop med ASCII-aritmetikk Store bokstaver A-Z har
-ASCII 65-90, små a-z har 97-122 (avstand 32)
+Store bokstaver A-Z har ASCII 65-90, små a-z har 97-122 (avstand 32).
 
 ## Usage
 
@@ -18,3 +17,10 @@ to_lower_v2(x)
 ## Value
 
 Strengen med små bokstaver
+
+## Examples
+
+``` r
+to_lower_v2("Hello World")
+#> [1] "hello world"
+```

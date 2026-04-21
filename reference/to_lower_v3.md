@@ -17,3 +17,10 @@ to_lower_v3(x)
 ## Value
 
 Strengen med små bokstaver
+
+## Examples
+
+``` r
+to_lower_v3("Hello World")
+#> [1] "hello world"
+```
